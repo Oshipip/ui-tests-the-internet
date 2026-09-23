@@ -1,9 +1,1 @@
-pages\InputsPage.class
-base\TestBase.class
-pages\CheckboxesPage.class
-pages\DropdownPage.class
-tests\AddRemoveElementsTest.class
-tests\DropdownTest.class
-pages\AddRemovePage.class
-tests\InputsTest.class
-tests\CheckboxesTest.class
+FormAuthenticationTest.class
