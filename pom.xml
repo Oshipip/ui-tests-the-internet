@@ -16,12 +16,10 @@
 
         <selenium.version>4.49.0</selenium.version>
         <testng.version>7.8.0</testng.version>
-        <wdm.version>5.9.0</wdm.version>
     </properties>
 
     <dependencies>
 
-        <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -29,19 +27,10 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- WebDriverManager -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${wdm.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -59,7 +48,6 @@
                         <include>**/*Test.java</include>
                     </includes>
                 </configuration>
-
             </plugin>
 
         </plugins>
