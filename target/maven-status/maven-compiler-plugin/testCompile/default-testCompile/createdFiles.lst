@@ -1,2 +1,9 @@
+pages\InputsPage.class
+pages\CheckboxesPage.class
+pages\DropdownPage.class
+tests\AddRemoveElementsTest.class
+tests\DropdownTest.class
+pages\AddRemovePage.class
 tests\BaseTest.class
-tests\FormAuthenticationTest.class
+tests\InputsTest.class
+tests\CheckboxesTest.class
