@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -6,17 +7,19 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>ru.college</groupId>
     <artifactId>ui-tests-the-internet</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
-        <selenium.version>4.49.0</selenium.version>
-        <testng.version>7.8.0</testng.version>
-        <wdm.version>5.9.0</wdm.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <selenium.version>4.22.0</selenium.version>
+        <testng.version>7.10.2</testng.version>
+        <wdm.version>5.9.2</wdm.version>
     </properties>
 
     <dependencies>
@@ -51,6 +54,7 @@
         <plugins>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
 
@@ -59,7 +63,6 @@
                         <include>**/*Test.java</include>
                     </includes>
                 </configuration>
-
             </plugin>
 
         </plugins>

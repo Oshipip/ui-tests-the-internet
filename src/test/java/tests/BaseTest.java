@@ -1,17 +1,15 @@
-package base;
+package tests;
 
-import java.time.Duration;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 
-public class TestBase {
+public abstract class BaseTest {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
@@ -21,17 +19,9 @@ public class TestBase {
 
         WebDriverManager.chromedriver().setup();
 
-        ChromeOptions options = new ChromeOptions();
+        driver = new ChromeDriver();
 
-        options.addArguments("--start-maximized");
-
-        driver = new ChromeDriver(options);
-
-        driver.manage().timeouts()
-                .implicitlyWait(Duration.ZERO);
-
-        driver.manage().timeouts()
-                .pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().window().maximize();
 
         wait = new WebDriverWait(
                 driver,
@@ -44,7 +34,6 @@ public class TestBase {
 
         if (driver != null) {
             driver.quit();
-            driver = null;
         }
     }
 }

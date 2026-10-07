@@ -1,9 +1,2 @@
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\base\TestBase.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\pages\CartPage.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\pages\CheckoutPage.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\pages\InventoryPage.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\pages\LoginPage.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\tests\CartTest.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\tests\CheckoutTest.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\tests\LoginTest.java
-C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\utils\BaseTest.java
+C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\tests\BaseTest.java
+C:\Users\Oship\Documents\GitHub\ui-tests-the-internet\src\test\java\tests\FormAuthenticationTest.java
